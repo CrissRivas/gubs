@@ -1,0 +1,141 @@
+.challenge {
+    height: 500px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    .mov-text {
+        display: grid;
+        grid-template-rows: repeat(1fr, 4);
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        .img-bgrnd {
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+        }
+        .rel-box {
+            position: relative;
+            .text-1 {
+                position: absolute;
+                width: 4000px;
+                font-size: 75px;
+                font-weight: bolder;
+                line-height: 100px;
+                color: #ff66c4;
+                animation-name: move-text-1;
+                animation-duration: 20s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            .text-2 {
+                position: absolute;
+                width: 4000px;
+                font-size: 75px;
+                font-weight: bolder;
+                line-height: 100px;
+                color: #8c52ff;
+                animation-name: move-text-2;
+                animation-duration: 20s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            .anti-text-1 {
+                position: absolute;
+                width: 4000px;
+                font-size: 75px;
+                line-height: 100px;
+                color: #cb6ce6;
+                font-weight: bolder;
+                animation-name: move-text-3;
+                animation-duration: 20s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                animation-direction: reverse;
+            }
+            .anti-text-2 {
+                position: absolute;
+                width: 4000px;
+                font-size: 75px;
+                line-height: 100px;
+                color: #3866ff;
+                font-weight: bolder;
+                animation-name: move-text-4;
+                animation-duration: 20s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                animation-direction: reverse;
+            }
+        }
+    }
+}
+
+.rigth-text {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: darkturquoise;
+    align-items: center;
+    .title {
+        font-family: Raleway;
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+        line-height: 75px;
+    }
+    .sub-title {
+        color: white;
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-family: Raleway;
+    }
+    p {
+        width: 250px;
+        line-height: 30px;
+        font-size: 20px;
+        text-align: right;
+        font-family: Raleway;
+        text-justify: distribute;
+    }
+}
+
+@keyframes move-text-1 {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: -1025px;
+    }
+}
+
+@keyframes move-text-2 {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: -923px;
+    }
+}
+
+@keyframes move-text-3 {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: -755px;
+    }
+}
+
+@keyframes move-text-4 {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: -635px;
+    }
+}

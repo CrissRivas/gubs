@@ -1,0 +1,37 @@
+.approach {
+    font-family: Open Sans;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+    background-image: url('/assets/img/background1.png');
+    .static-text {
+        color: fuchsia;
+        font-weight: bold;
+        font-size: 30px;
+        padding: 30px;
+        text-align: center;
+        line-height: 35px;
+    }
+    .dinamic-text {
+        width: 4000px;
+        position: absolute;
+        top: 260px;
+        color: white;
+        font-size: 200px;
+        font-weight: bolder;
+        animation-name: dinamic-text;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
+
+@keyframes dinamic-text {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: -1750px;
+    }
+}

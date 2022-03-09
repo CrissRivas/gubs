@@ -1,0 +1,123 @@
+<!-- Mobile -->
+<div class="mobile">
+    <section class="burguer">
+        <button mat-mini-fab color="primary" (click)="toggleMnu()">
+<mat-icon>menu</mat-icon>
+        </button>
+
+    </section>
+    <section class="logo">
+        <a [routerLink]="['home']">
+            Epic Farmers
+        </a>
+    </section>
+
+</div>
+
+<div class="mobile-menu" [class.active]="activeMenu">
+    <div class="close-menu">
+        <button mat-mini-fab color="primary" (click)="toggleMnu()">
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+
+    <section>
+        <ul>
+            <li>
+                <a [routerLink]="['manifesto']">Manifesto</a>
+            </li>
+            <li>
+                <a [routerLink]="['brands']">Brands</a>
+            </li>
+            <li>
+                <a [routerLink]="['roadmaps']">Roadmaps</a>
+            </li>
+            <li>
+                <a [routerLink]="['culture']">Our culture</a>
+            </li>
+            <li>
+                <a [routerLink]="['conspiracies']">Conspiracies</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="icons">
+        <!-- Spotify -->
+        <a href="">
+            <img class="icon" src="assets/icons/spotify-W.svg" alt="Spotify">
+        </a>
+        <!-- Linkedin -->
+        <a href="">
+            <img class="icon" src="assets/icons/linkedin-W.svg" alt="Linkedin">
+        </a>
+        <!-- Reddit -->
+        <a href="">
+            <img class="icon" src="assets/icons/reddit-W.svg" alt="Reddit">
+        </a>
+        <!-- Instagram -->
+        <a href="">
+            <img class="icon" src="assets/icons/instagram-W.svg" alt="Instagram">
+        </a>
+
+        <br>
+        <!-- Twitch -->
+        <a href="">
+            <img class="icon" src="assets/icons/twitch-W.svg" alt="Twitch">
+        </a>
+        <!-- Twitter -->
+        <a href="">
+            <img class="icon" src="assets/icons/twitter-W.svg" alt="Twitter">
+        </a>
+        <!-- Tic-Tok -->
+        <a href="">
+            <img class="icon" src="assets/icons/tik-tok-W.svg" alt="Tic-Tok">
+        </a>
+        <!-- Facebook -->
+        <a href="">
+            <img class="icon" src="assets/icons/facebook-W.svg" alt="Facebook">
+        </a>
+    </section>
+
+</div>
+<!-- Tablet / PC -->
+<div class="pc">
+    <section class="logo">
+        <a [routerLink]="['home']">
+            Epic Farmers
+        </a>
+    </section>
+    <section class="icons">
+        <!-- Spotify -->
+        <a href="">
+            <img class="icon" src="assets/icons/spotify-W.svg" alt="Spotify">
+        </a>
+        <!-- Linkedin -->
+        <a href="">
+            <img class="icon" src="assets/icons/linkedin-W.svg" alt="Linkedin">
+        </a>
+        <!-- Reddit -->
+        <a href="">
+            <img class="icon" src="assets/icons/reddit-W.svg" alt="Reddit">
+        </a>
+        <!-- Instagram -->
+        <a href="">
+            <img class="icon" src="assets/icons/instagram-W.svg" alt="Instagram">
+        </a>
+        <!-- Twitch -->
+        <a href="">
+            <img class="icon" src="assets/icons/twitch-W.svg" alt="Twitch">
+        </a>
+        <!-- Twitter -->
+        <a href="">
+            <img class="icon" src="assets/icons/twitter-W.svg" alt="Twitter">
+        </a>
+        <!-- Tic-Tok -->
+        <a href="">
+            <img class="icon" src="assets/icons/tik-tok-W.svg" alt="Tic-Tok">
+        </a>
+        <!-- Facebook -->
+        <a href="">
+            <img class="icon" src="assets/icons/facebook-W.svg" alt="Facebook">
+        </a>
+    </section>
+</div>

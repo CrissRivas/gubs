@@ -1,0 +1,26 @@
+.manifesto {
+    height: 500px;
+    width: 100%;
+    background-color: fuchsia;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    color: white;
+    justify-items: center;
+}
+
+.kings {
+    font-family: 'Special Elite', cursive;
+    font-size: 35px;
+    padding: 20px;
+    line-height: 40px;
+}
+
+.cp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+        height: 400px;
+    }
+}

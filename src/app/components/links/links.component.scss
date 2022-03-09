@@ -1,0 +1,58 @@
+.links {
+    height: 400px;
+    width: 100%;
+    background-color: palevioletred;
+    font-size: 35px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .centered {
+            position: relative;
+            height: 1px;
+            width: 1px;
+            .icon {
+                height: 100px;
+                position: absolute;
+                animation-name: move-icon;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+        }
+    }
+}
+
+.wells {
+    height: 100%;
+}
+
+@keyframes move-icon {
+    0% {
+        top: -50px;
+        left: 0px;
+        transform: rotate(0deg);
+    }
+    25% {
+        top: -50px;
+        left: 30px;
+        transform: rotate(20deg);
+    }
+    50% {
+        top: -50px;
+        left: -30px;
+        transform: rotate(-20deg);
+    }
+    75% {
+        top: 30px;
+        left: -30px;
+        transform: rotate(10deg);
+    }
+    100% {
+        top: -50px;
+        left: 0px;
+        transform: rotate(0deg);
+    }
+}

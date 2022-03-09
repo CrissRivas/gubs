@@ -1,0 +1,15 @@
+.principes {
+    height: 500px;
+    width: 100%;
+    background-color: fuchsia;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Special Elite', cursive;
+    .paper {
+        height: 300px;
+        width: 600px;
+        background-color: white;
+        color: black;
+    }
+}
