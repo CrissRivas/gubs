@@ -20,7 +20,8 @@ import { ConspiraciesComponent } from './pages/conspiracies/conspiracies.compone
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
-
+import { SwiperModule } from 'swiper/angular';
+import { NotesComponent } from './components/notes/notes.component';
 
 @NgModule({
   declarations: [
@@ -37,14 +38,16 @@ import {MatIconModule} from '@angular/material/icon';
     CultureComponent,
     BrandsComponent,
     RoadmapsComponent,
-    ConspiraciesComponent
+    ConspiraciesComponent,
+    NotesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

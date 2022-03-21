@@ -4,6 +4,7 @@
     background-color: palevioletred;
     font-size: 35px;
     display: grid;
+    overflow: hidden;
     grid-template-columns: repeat(5, 1fr);
     section {
         display: flex;
@@ -13,13 +14,48 @@
             position: relative;
             height: 1px;
             width: 1px;
+            animation-name: float;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            .rotative {
+                height: 150px;
+                position: absolute;
+                animation-name: rotation;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
             .icon {
                 height: 100px;
+                width: 100px;
                 position: absolute;
-                animation-name: move-icon;
-                animation-duration: 5s;
+                top: 25px;
+                left: 25px;
+            }
+        }
+        .centered-2 {
+            position: relative;
+            height: 1px;
+            width: 1px;
+            animation-name: float2;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            .rotative {
+                height: 150px;
+                position: absolute;
+                animation-name: rotation;
+                animation-duration: 10s;
                 animation-iteration-count: infinite;
-                animation-timing-function: ease-in-out;
+                animation-timing-function: linear;
+            }
+            .icon {
+                height: 100px;
+                width: 100px;
+                position: absolute;
+                top: 25px;
+                left: 25px;
             }
         }
     }
@@ -29,30 +65,105 @@
     height: 100%;
 }
 
-@keyframes move-icon {
+@keyframes rotation {
     0% {
-        top: -50px;
-        left: 0px;
+        transform: rotate(360deg);
+    }
+    100% {
         transform: rotate(0deg);
     }
-    25% {
-        top: -50px;
-        left: 30px;
-        transform: rotate(20deg);
+}
+
+@keyframes float {
+    0% {
+        top: -100px;
+        left: -20px;
+    }
+    10% {
+        top: -80px;
+        left: 10px;
+    }
+    20% {
+        top: -160px;
+        left: -30px;
+    }
+    30% {
+        top: -70px;
+        left: 0px;
+    }
+    40% {
+        top: -60px;
+        left: -20px;
     }
     50% {
+        top: -140px;
+        left: 20px;
+    }
+    60% {
+        top: -80px;
+        left: -30px;
+    }
+    70% {
+        top: -60px;
+        left: 0px;
+    }
+    80% {
+        top: -140px;
+        left: 30px;
+    }
+    90% {
+        top: -80px;
+        left: -20px;
+    }
+    100% {
+        top: -100px;
+        left: -20px;
+    }
+}
+
+@keyframes float2 {
+    0% {
         top: -50px;
         left: -30px;
-        transform: rotate(-20deg);
     }
-    75% {
-        top: 30px;
+    10% {
+        top: -120px;
+        left: -20px;
+    }
+    20% {
+        top: -80px;
         left: -30px;
-        transform: rotate(10deg);
+    }
+    30% {
+        top: -140px;
+        left: -10px;
+    }
+    40% {
+        top: -100px;
+        left: -50px;
+    }
+    50% {
+        top: -70px;
+        left: -20px;
+    }
+    60% {
+        top: -160px;
+        left: -70px;
+    }
+    70% {
+        top: -80px;
+        left: -10px;
+    }
+    80% {
+        top: -70px;
+        left: -50px;
+    }
+    90% {
+        top: -160px;
+        left: -10px;
     }
     100% {
         top: -50px;
-        left: 0px;
-        transform: rotate(0deg);
+        left: -30px;
     }
 }
