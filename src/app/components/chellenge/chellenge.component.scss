@@ -22,8 +22,8 @@
             .text-1 {
                 position: absolute;
                 width: 4000px;
-                font-size: 75px;
-                font-weight: bolder;
+                font-size: 140px;
+                font-weight: 800;
                 line-height: 100px;
                 color: #ff66c4;
                 animation-name: move-text-1;
@@ -34,8 +34,8 @@
             .text-2 {
                 position: absolute;
                 width: 4000px;
-                font-size: 75px;
-                font-weight: bolder;
+                font-size: 140px;
+                font-weight: 800;
                 line-height: 100px;
                 color: #8c52ff;
                 animation-name: move-text-2;
@@ -46,10 +46,10 @@
             .anti-text-1 {
                 position: absolute;
                 width: 4000px;
-                font-size: 75px;
+                font-size: 140px;
                 line-height: 100px;
                 color: #cb6ce6;
-                font-weight: bolder;
+                font-weight: 800;
                 animation-name: move-text-3;
                 animation-duration: 20s;
                 animation-iteration-count: infinite;
@@ -59,10 +59,10 @@
             .anti-text-2 {
                 position: absolute;
                 width: 4000px;
-                font-size: 75px;
+                font-size: 140px;
                 line-height: 100px;
                 color: #3866ff;
-                font-weight: bolder;
+                font-weight: 800;
                 animation-name: move-text-4;
                 animation-duration: 20s;
                 animation-iteration-count: infinite;
@@ -109,7 +109,7 @@
         left: 0px;
     }
     100% {
-        left: -1025px;
+        left: -1965px;
     }
 }
 
@@ -118,7 +118,7 @@
         left: 0px;
     }
     100% {
-        left: -923px;
+        left: -1755px;
     }
 }
 
@@ -127,7 +127,7 @@
         left: 0px;
     }
     100% {
-        left: -755px;
+        left: -1435px;
     }
 }
 
@@ -136,6 +136,6 @@
         left: 0px;
     }
     100% {
-        left: -635px;
+        left: -1220px;
     }
 }

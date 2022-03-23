@@ -3,7 +3,7 @@
     width: 100%;
     background-color: fuchsia;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 2fr;
     color: white;
     justify-items: center;
 }
@@ -11,7 +11,7 @@
 .kings {
     font-family: 'Special Elite', cursive;
     font-size: 35px;
-    padding: 20px;
+    padding: 30px;
     line-height: 40px;
 }
 
