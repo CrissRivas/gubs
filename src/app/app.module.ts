@@ -17,10 +17,10 @@ import { BrandsComponent } from './pages/brands/brands.component';
 import { RoadmapsComponent } from './pages/roadmaps/roadmaps.component';
 import { ConspiraciesComponent } from './pages/conspiracies/conspiracies.component';
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
-import { SwiperModule } from 'swiper/angular';
+
 import { NotesComponent } from './components/notes/notes.component';
 
 @NgModule({
@@ -44,10 +44,10 @@ import { NotesComponent } from './components/notes/notes.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
+
     MatButtonModule,
     MatIconModule,
-    SwiperModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
